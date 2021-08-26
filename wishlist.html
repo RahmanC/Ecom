@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/wishlist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+       <!-- Navigation Bar -->
+    <header class="nav-bar">
+      <a href="index.html"
+        ><img src="/static/images/logo.png" alt="logo" class="logo"
+      /></a>
+      <div class="toggle" onclick="toggleMenu();"></div>
+      <ul class="nav-links">
+        <li class="nav-item desktop">
+          <a href="#">Consoles</a>
+        </li>
+
+        <li class="nav-item desktop">
+          <a href="#">Laptops</a>
+        </li>
+
+        <li class="nav-item desktop">
+          <a href="#">Watches</a>
+        </li>
+
+        <li class="nav-item desktop">
+          <a href="#">Accessories</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#"><i class="far fa-heart fa-lg wishlist"></i></a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#"><i class="fas fa-shopping-cart fa-lg cart"></i></a>
+        </li>
+
+        <li class="nav-item desktop">
+          <a href="#"><button>SIGN IN/SIGN UP</button></a>
+        </li>
+
+        <li class="nav-item mobile">
+          <a href="#"
+            ><i class="fas fa-bars" style="color: #fff; font-size: 36px"></i
+          ></a>
+        </li>
+      </ul>
+    </header>
+
+    <section>
+      <div class="searchBox">
+        <div class="search">
+          <input type="text" class="searchInput" placeholder="Search" />
+        </div>
+      </div>
+    </section>
+
+    <main>
+
+        <table class="data">
+            <caption>My Wishlist</caption>
+            <thead>
+                <tr>
+                    <th><input type="checkbox" name="checkbox" id=""></th>
+                    <th></th>
+                    <th></th>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Date Added</th>
+                    <th>Stock Status</th>
+                    <th></td>
+                </tr>
+            </thead>
+            
+
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" name="checkbox" id=""></td>
+                    <td><i class="fas fa-times"></i></td>
+                    <td><div class="bg-image"></div></td>
+                    <td>Product A</td>
+                    <td>#4,000</td>
+                    <td>August 11, 2011</td>
+                    <td>2 In Stock (Available On Backorder)</td>
+                    <td><button class="btn">Select Options</button></td>
+                </tr>
+            
+            
+            <tr id="lastRow">
+                <td colspan="3">
+                    <form action="">
+                        <div class="select">
+                            <select id="cars" name="cars" style="height:19px; width:150px; text-align:center;">
+                                <option value="actions">Actions</option>
+                            </select>
+                        </div>
+                        
+                    </form> 
+                </td>
+                <td id="removeBorder"><button class="btn">Apply Actions</button></i></td>
+                <td id="removeBorder"></td>
+                <td id="removeBorder"></td>
+                <td id="removeBorder"><button class="btn">Add Selected to Cart</button></i></td>
+                <td id="removeBorder"><button class="btn">Add all to Cart</button></i></td>
+            </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+      <p class="footer-description">
+        Copyright &copy; MDS. All Rights Reserved.
+      </p>
+    </footer>
+     <script src="./static/js/main_product.js"></script>
+</body>
+</html>

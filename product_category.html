@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./static/css/product_cat.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+     <!-- Navigation Bar -->
+    <header class="nav-bar">
+      <a href="index.html"
+        ><img src="/static/images/logo.png" alt="logo" class="logo"
+      /></a>
+      <div class="toggle" onclick="toggleMenu();"></div>
+      <ul class="nav-links">
+        <li class="nav-item desktop">
+          <a href="#">Consoles</a>
+        </li>
+
+        <li class="nav-item desktop">
+          <a href="#">Laptops</a>
+        </li>
+
+        <li class="nav-item desktop">
+          <a href="#">Watches</a>
+        </li>
+
+        <li class="nav-item desktop">
+          <a href="#">Accessories</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#"><i class="far fa-heart fa-lg wishlist"></i></a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#"><i class="fas fa-shopping-cart fa-lg cart"></i></a>
+        </li>
+
+        <li class="nav-item desktop">
+          <a href="#"><button>SIGN IN/SIGN UP</button></a>
+        </li>
+
+        <li class="nav-item mobile">
+          <a href="#"
+            ><i class="fas fa-bars" style="color: #fff; font-size: 36px"></i
+          ></a>
+        </li>
+      </ul>
+    </header>
+
+    <section>
+      <div class="searchBox">
+        <div class="search">
+          <input type="text" class="searchInput" placeholder="Search" />
+        </div>
+      </div>
+    </section>
+
+
+    <div class="promo">
+      <div class="promo-text">
+        <h2>SPECIAL PROMO FROM 16TH AUGUST TO 1ST SEPTEMBER</h2>
+      </div>
+      <div class="promo-img">
+        <div class="image-container">
+          <img src="./static/images/promo.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="promo-category">
+      <div class="category-container">
+        <div class="category-content">
+          <p class="filter">FILTER</p>
+          <p class="content">Categories</p>
+          <!-- checkbox -->
+          <div class="checkbox-container">
+            <input type="checkbox" id="class" name="classA" value="classA" />
+            <label for="class" class="checkbox">Class A</label>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="class" name="classA" value="classA" />
+            <label for="class" class="checkbox">Class A</label>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="class" name="classA" value="classA" />
+            <label for="class" class="checkbox">Class A</label>
+          </div>
+
+          <hr class="line" />
+
+          <p class="content">Prices</p>
+
+          <!-- price input -->
+          <div class="price-input-container">
+            <input type="text" id="price" name="price" />
+            <hr class="subtract" />
+            <input type="text" id="price" name="price" />
+          </div>
+          <!-- label container opening tag -->
+          <div class="label-container">
+            <div class="minimum-container">
+              <label for="Minimum" class="price-label">Min.&#8358 </label>
+            </div>
+            <div class="maximum-container">
+              <label for="Maximum" class="price-label">Max.&#8358</label>
+            </div>
+          </div>
+          <!-- label container closing tag -->
+
+          <!-- price range container opening tag -->
+          <div class="price-range-container">
+            <input type="range" id="rangeInput" name="rangeInput" min="0" max="100000" value="0"
+        oninput="amount.value=rangeInput.value">
+        <output id="amount" name="amount" for="rangeInput">0</output>
+          </div>
+          <!-- price range container closing tag -->
+
+          <!-- product container -->
+          <p class="content">Top Rated Products</p>
+          <div class="product"></div>
+          <p class="content-description">Product A</p>
+          <p class="price-description-price">#45,000</p>
+
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+
+          <p class="content">
+            A Very Rugged And <br />
+            Useful Laptop For ...
+          </p>
+        </div>
+      </div>
+      <!-- opening tag for product container -->
+      <div class="product-container">
+        <!-- openug tag for tab container -->
+        <div class="tab">
+          <button class="tablinks" id = "defaultOpen" onclick="openCity(event, 'London')">
+            Laptop
+          </button>
+          <button class="tablinks" onclick="openCity(event, 'Paris')">
+            Watches
+          </button>
+          <button class="tablinks" onclick="openCity(event, 'Tokyo')">
+            Console
+          </button>
+          <button class="tablinks" onclick="openCity(event, 'Tokyo')">
+            Accessories
+          </button>
+        </div>
+        <!-- closing tag for tab container -->
+
+        <!-- opening tab for tab content container -->
+        <div id="London" class="tabcontent">
+          <div class="container-for-grid">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+            <div class="five"></div>
+            <div class="six"></div>
+          </div>
+        </div>
+
+        <div id="Paris" class="tabcontent">
+          <div class="container-for-grid">
+            <div class="seven"></div>
+            <div class="eight"></div>
+            <div class="nine"></div>
+            <div class="ten"></div>
+            <div class="eleven"></div>
+            <div class="twelve"></div>
+          </div>
+        </div>
+
+        <div id="Tokyo" class="tabcontent">
+          <h3>Tokyo</h3>
+          <p>Tokyo is the capital of Japan.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p class="footer-description">
+        Copyright &copy; MDS. All Rights Reserved.
+      </p>
+    </footer>
+    <script src="./static/js/main_product.js"></script>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Review Page</title>
+    <link rel="stylesheet" href="/static/css/Order-review-page.css">
+</head>
+<body>
+       <!-- Navigation Bar -->
+    <header class="nav-bar">
+      <a href="index.html"
+        ><img src="/static/images/logo.png" alt="logo" class="logo"
+      /></a>
+      <div class="toggle" onclick="toggleMenu();"></div>
+      <ul class="nav-links">
+        <li class="nav-item desktop">
+          <a href="#">Consoles</a>
+        </li>
+
+        <li class="nav-item desktop">
+          <a href="#">Laptops</a>
+        </li>
+
+        <li class="nav-item desktop">
+          <a href="#">Watches</a>
+        </li>
+
+        <li class="nav-item desktop">
+          <a href="#">Accessories</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#"><i class="far fa-heart fa-lg wishlist"></i></a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#"><i class="fas fa-shopping-cart fa-lg cart"></i></a>
+        </li>
+
+        <li class="nav-item desktop">
+          <a href="#"><button>SIGN IN/SIGN UP</button></a>
+        </li>
+
+        <li class="nav-item mobile">
+          <a href="#"
+            ><i class="fas fa-bars" style="color: #fff; font-size: 36px"></i
+          ></a>
+        </li>
+      </ul>
+    </header>
+
+    <section>
+      <div class="searchBox">
+        <div class="search">
+          <input type="text" class="searchInput" placeholder="Search" />
+        </div>
+      </div>
+    </section>
+
+    <div class="overboard">
+        <h3> Thank You, Your Order Has Been Recieved </h3> 
+
+    </div>
+
+    <div id="div1">
+        <table>
+            <tr>
+                <th>Order Number:</th>
+                <th>Date: </th>
+                <th>Total:</th>
+                <th>Payment Method:</th>
+            </tr>
+
+            <tr>
+                <td>48</td>
+                <td>August 11, 2021</td>
+                <td>N 4,000</td>
+                <td>Debit/Credit card<td>
+
+            </tr>
+            
+        </table>
+    </div>
+
+    <div id="div">
+
+        <h3>Order Details </h3>
+        <table>
+           
+            <tr>
+            <th> Product </th>
+            <th> Sub-Total </th>
+            </tr>
+            <tr>
+                <td>Product A x 2</td>
+                <td>N2,000</td>
+            </tr>
+            <tr>
+                <td>Sub-Total</td>
+                <td>N4,000</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>N100</td>
+            </tr>
+            <tr>
+                <td>Shipping</td>
+                <td>N500</td>
+            </tr>
+            <tr>
+                <td>Payment Method</td>
+                <td>Debit/Credit Card</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>N6,600</td>
+            </tr>
+    </table>
+
+    </div>
+    
+</body>
+</html>

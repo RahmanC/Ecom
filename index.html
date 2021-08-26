@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/landing-page.css" />
+
+    <!--Font Awesome Link-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+    <title>Home Page</title>
+  </head>
+  <body>
+     <!-- Navigation Bar -->
+    <header class="nav-bar">
+      <a href="index.html"
+        ><img src="/static/images/logo.png" alt="logo" class="logo"
+      /></a>
+      <div class="toggle" onclick="toggleMenu();"></div>
+      <ul class="nav-links">
+        <li class="nav-item desktop">
+          <a href="#">Consoles</a>
+        </li>
+
+        <li class="nav-item desktop">
+          <a href="#">Laptops</a>
+        </li>
+
+        <li class="nav-item desktop">
+          <a href="#">Watches</a>
+        </li>
+
+        <li class="nav-item desktop">
+          <a href="#">Accessories</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="/wishlist.html"><i class="far fa-heart fa-lg wishlist"></i></a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#"><i class="fas fa-shopping-cart fa-lg cart"></i></a>
+        </li>
+
+        <li class="nav-item desktop">
+          <a href="/signup.html"><button>SIGN IN/SIGN UP</button></a>
+        </li>
+
+        <li class="nav-item mobile">
+          <a href="#"
+            ><i class="fas fa-bars" style="color: #fff; font-size: 36px"></i
+          ></a>
+        </li>
+      </ul>
+    </header>
+
+    <section>
+      <div class="searchBox">
+        <div class="search">
+          <input type="text" class="searchInput" placeholder="Search" />
+        </div>
+      </div>
+    </section>
+
+    <section class="hero">
+      <div class="top-main">
+        <div class="messages">
+          <h2 class="welcome-msg">
+            WELCOME TO <br />
+            MAVERICK DIGITAL STORE
+          </h2>
+          <p class="cont-msg">
+            Your best online store where you get everything you need...
+          </p>
+          <button class="button">
+            <a href="/product_category.html">Shop Now</a>
+          </button>
+        </div>
+
+        <img src="/static/images/maverick-stores.png" alt="storepics" />
+      </div>
+    </section>
+
+    <section class="Ad-section">
+      <div>
+        <p>This section contains Ads</p>
+        <img src="/static/images/ad-placeholder.jpg" alt="Tiidelab-book" />
+      </div>
+    </section>
+
+    <section class="featured-products">
+      <div class="title">
+        <h3 class="topic-txt">FEATURED PRODUCTS</h3>
+      </div>
+      <div class="featured-products-container">
+        <div class="container-for-grid">
+          <div class="one">
+            <div class="product">
+              <div class="image-new">
+                <div class="image-container">
+                  <img src="./static/images/new-2.png" alt="" />
+                </div>
+              </div>
+              <div class="button-container">
+                <a href="/product.html"><button class="button1">buy now</button></a>
+              </div>
+              <div class="cart-content">
+                <div class="icon-container">
+                  <i class="fa fa-shopping-cart" style="font-size: 24px"></i>
+                  <br />
+                  <i class="fa fa-heart" style="font-size: 24px"></i>
+                </div>
+              </div>
+            </div>
+            <div class="description-product">
+              <div class="product-name">
+                <p class="content">Product A</p>
+              </div>
+              <div class="product-price">
+                <p class="price">#45,000</p>
+              </div>
+            </div>
+            <div class="product-content">
+              <p class="content">A Very Rugged and Useful Laptop for...</p>
+            </div>
+          </div>
+          <div class="two">
+            <div class="product2">
+              <div class="image-new">
+                <div class="image-container">
+                  <img src="./static/images/new-2.png" alt="" />
+                </div>
+              </div>
+              <div class="button-container">
+                <button class="button1">buy now</button>
+              </div>
+              <div class="cart-content">
+                <div class="icon-container">
+                  <i class="fa fa-shopping-cart" style="font-size: 24px"></i>
+                  <br />
+                  <i class="fa fa-heart" style="font-size: 24px"></i>
+                </div>
+              </div>
+            </div>
+            <div class="description-product">
+              <div class="product-name">
+                <p class="content">Product A</p>
+              </div>
+              <div class="product-price">
+                <p class="price">#45,000</p>
+              </div>
+            </div>
+            <div class="product-content">
+              <p class="content">A Very Rugged and Useful Laptop for...</p>
+            </div>
+          </div>
+          <div class="three">
+            <div class="product3">
+              <div class="image-new">
+                <div class="image-container">
+                  <img src="./static/images/new-2.png" alt="" />
+                </div>
+              </div>
+              <div class="button-container">
+                <button class="button1">buy now</button>
+              </div>
+              <div class="cart-content">
+                <div class="icon-container">
+                  <i class="fa fa-shopping-cart" style="font-size: 24px"></i>
+                  <br />
+                  <i class="fa fa-heart" style="font-size: 24px"></i>
+                </div>
+              </div>
+            </div>
+            <div class="description-product">
+              <div class="product-name">
+                <p class="content">Product A</p>
+              </div>
+              <div class="product-price">
+                <p class="price">#45,000</p>
+              </div>
+            </div>
+            <div class="product-content">
+              <p class="content">A Very Rugged and Useful Laptop for...</p>
+            </div>
+          </div>
+          <div class="four">
+            <div class="product4">
+              <div class="image-new">
+                <div class="image-container">
+                  <img src="./static/images/new-2.png" alt="" />
+                </div>
+              </div>
+              <div class="button-container">
+                <button class="button1">buy now</button>
+              </div>
+              <div class="cart-content">
+                <div class="icon-container">
+                  <i class="fa fa-shopping-cart" style="font-size: 24px"></i>
+                  <br />
+                  <i class="fa fa-heart" style="font-size: 24px"></i>
+                </div>
+              </div>
+            </div>
+            <div class="description-product">
+              <div class="product-name">
+                <p class="content">Product A</p>
+              </div>
+              <div class="product-price">
+                <p class="price">#45,000</p>
+              </div>
+            </div>
+            <div class="product-content">
+              <p class="content">A Very Rugged and Useful Laptop for...</p>
+            </div>
+          </div>
+          <div class="five">
+              <div class="product5">
+              <div class="image-new">
+                <div class="image-container">
+                  <img src="./static/images/new-2.png" alt="" />
+                </div>
+              </div>
+              <div class="button-container">
+                <button class="button1">buy now</button>
+              </div>
+              <div class="cart-content">
+                <div class="icon-container">
+                  <i class="fa fa-shopping-cart" style="font-size: 24px"></i>
+                  <br />
+                  <i class="fa fa-heart" style="font-size: 24px"></i>
+                </div>
+              </div>
+            </div>
+            <div class="description-product">
+              <div class="product-name">
+                <p class="content">Product A</p>
+              </div>
+              <div class="product-price">
+                <p class="price">#45,000</p>
+              </div>
+            </div>
+            <div class="product-content">
+              <p class="content">A Very Rugged and Useful Laptop for...</p>
+            </div>
+          </div>
+          <div class="six">
+              <div class="product6">
+              <div class="image-new">
+                <div class="image-container">
+                  <img src="./static/images/new-2.png" alt="" />
+                </div>
+              </div>
+              <div class="button-container">
+                <button class="button1">buy now</button>
+              </div>
+              <div class="cart-content">
+                <div class="icon-container">
+                  <i class="fa fa-shopping-cart" style="font-size: 24px"></i>
+                  <br />
+                  <i class="fa fa-heart" style="font-size: 24px"></i>
+                </div>
+              </div>
+            </div>
+            <div class="description-product">
+              <div class="product-name">
+                <p class="content">Product A</p>
+              </div>
+              <div class="product-price">
+                <p class="price">#45,000</p>
+              </div>
+            </div>
+            <div class="product-content">
+              <p class="content">A Very Rugged and Useful Laptop for...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p class="footer-description">
+        Copyright &copy; MDS. All Rights Reserved.
+      </p>
+    </footer>
+     <script src="./static/js/main.js"></script>
+  </body>
+</html>
